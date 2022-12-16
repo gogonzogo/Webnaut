@@ -1,52 +1,6 @@
 @import '../utilities/variables';
 
-.hero__section {
-    background-color: #D8DDFF;
-    background-image: linear-gradient(69.43deg, rgba(59, 8, 85, 0.2) 47.94%, rgba(135, 111, 173, 0) 79.74%),
-        url('../images/studio/hero-bg-mobile.jpg');
-    height: 500px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 1;
-    position: relative;
 
-    // @media (min-device-pixel-ratio: 2),
-    //     (min-resolution: 192dpi),
-    //     (min-resolution: 2dppx) {
-    //         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-    //                 rgba(47, 48, 58, 0.4)),
-    //             url(../images/studio/hero-bg-mobile-2x.jpg);
-    //     }
-    
-    // @media screen and (min-width: 480px) {
-    //     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-    //             rgba(47, 48, 58, 0.4)),
-    //         url(../images/studio/hero-bg-tablet.jpg);
-
-    //     @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2),
-    //     (min-resolution: 192dpi),
-    //     (min-resolution: 2dppx) {
-    //         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-    //                 rgba(47, 48, 58, 0.4)),
-    //             url(../images/studio/hero-bg-tablet-2x.jpg);
-    //     }
-    // }
-    
-    // @media screen and (min-width: 768px) and (max-width: 1200px) {
-    //     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-    //             rgba(47, 48, 58, 0.4)),
-    //         url(../images/studio/hero-bg-desktop.jpg);
-
-    //     @media screen and (min-width: 768px)and (max-width: 1200px) and (min-device-pixel-ratio: 2),
-    //     (min-resolution: 192dpi),
-    //     (min-resolution: 2dppx) {
-    //         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-    //                 rgba(47, 48, 58, 0.4)),
-    //             url(../images/studio/hero-bg-desktop-2x.jpg);
-    //     }
-    // }
-}
 
 
 .hero__text-container {
