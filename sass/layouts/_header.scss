@@ -1,0 +1,17 @@
+@import '../utilities/variables';
+
+.header__section {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}

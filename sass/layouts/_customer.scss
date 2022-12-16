@@ -1,0 +1,58 @@
+@import '../utilities/variables';
+
+.our-customers__logo-section {
+    background-color: getColor('primary-background-color');
+    padding-bottom: 60px;
+    padding-top: 56px;
+}
+
+.our-customers__logo-container {
+    min-width: 290px;
+    display: flex;
+    justify-content: center;
+}
+
+.our-customers__logo-list {
+    min-width: 171px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.our-customers__logo-list-item {
+    min-width: 171px;
+    display: flex;
+    justify-content: center;
+
+    &:not(:last-child) {
+        margin-bottom: 25px;
+    }
+}
+
+.amazon__link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.amazon-arrow-logo {
+    margin-left: 16px;
+}
+
+.our-customers__logo-list-item {
+
+    &:hover,
+    &:focus {
+        @each $i in $customers-logo {
+            .#{nth($i,1)}-logo {
+                fill: nth($i, 2);
+
+            }
+        }
+    }
+}
+
+.our-customers__logo-list-link-icon {
+    background-color: getColor('primary-background-color');
+    fill: getColor('customer-logo-fill');
+}

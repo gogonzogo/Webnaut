@@ -1,0 +1,8 @@
+@import '../utilities/variables';
+
+
+.accent-button-style {
+    background: getColor('accent-color');
+    border-radius: 100px;
+    color: getColor('white-text-color');
+}

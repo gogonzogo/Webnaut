@@ -1,0 +1,212 @@
+.our-customers__logo-section {
+  background-color: #FFFFFF;
+  padding-bottom: 60px;
+  padding-top: 56px;
+}
+
+.our-customers__logo-container {
+  min-width: 290px;
+  display: flex;
+  justify-content: center;
+}
+
+.our-customers__logo-list {
+  min-width: 171px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.our-customers__logo-list-item {
+  min-width: 171px;
+  display: flex;
+  justify-content: center;
+}
+.our-customers__logo-list-item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.amazon__link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.amazon-arrow-logo {
+  margin-left: 16px;
+}
+
+.our-customers__logo-list-item:hover .adobe-logo, .our-customers__logo-list-item:focus .adobe-logo {
+  fill: #FA0C00;
+}
+.our-customers__logo-list-item:hover .airbnb-logo, .our-customers__logo-list-item:focus .airbnb-logo {
+  fill: #FF5A5F;
+}
+.our-customers__logo-list-item:hover .spotify-logo, .our-customers__logo-list-item:focus .spotify-logo {
+  fill: #1ED760;
+}
+.our-customers__logo-list-item:hover .discord-logo, .our-customers__logo-list-item:focus .discord-logo {
+  fill: #23272A;
+}
+.our-customers__logo-list-item:hover .amazon-name-logo, .our-customers__logo-list-item:focus .amazon-name-logo {
+  fill: #000000;
+}
+.our-customers__logo-list-item:hover .amazon-arrow-logo, .our-customers__logo-list-item:focus .amazon-arrow-logo {
+  fill: #FF9900;
+}
+.our-customers__logo-list-item:hover .dropbox-name-logo, .our-customers__logo-list-item:focus .dropbox-name-logo {
+  fill: #000000;
+}
+.our-customers__logo-list-item:hover .dropbox-box-logo, .our-customers__logo-list-item:focus .dropbox-box-logo {
+  fill: #0061FF;
+}
+
+.our-customers__logo-list-link-icon {
+  background-color: #FFFFFF;
+  fill: #B1B1B1;
+}
+
+.header__section {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__section {
+  background-color: #D8DDFF;
+  background-image: linear-gradient(69.43deg, rgba(59, 8, 85, 0.2) 47.94%, rgba(135, 111, 173, 0) 79.74%), url("/images/studio/hero-bg-mobile.jpg");
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  position: relative;
+}
+
+.hero__text-container {
+  background: rgba(98, 108, 169, 0.4);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border-radius: 27px;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 52px;
+  width: 75%;
+}
+
+.hero__title-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.6111111111;
+  text-transform: capitalize;
+  padding: 20px 20px 10px 20px;
+  max-width: 300px;
+}
+
+.hero__body-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.7;
+  padding: 0 54px 25px 20px;
+  max-width: 280px;
+}
+
+.hero__button {
+  background: #FFFFFF;
+  border-radius: 100px;
+  color: #626CA9;
+  padding: 8px 30px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.project-stages__section {
+  padding: 40px 0;
+  background-color: #F9F9F9;
+}
+
+.accent-button-style {
+  background: #626CA9;
+  border-radius: 100px;
+}
+
+.logo {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 38px;
+  text-transform: capitalize;
+  color: #212121;
+}
+
+.primary-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.secondary-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 1.4814814815;
+}
+
+.sub-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-end;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714286;
+  letter-spacing: -0.2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}/*# sourceMappingURL=main.css.map */
