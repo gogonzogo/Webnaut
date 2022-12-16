@@ -1,7 +1,8 @@
 // MAPS / FUNCTION
 $colors: (
     'accent-color': #626CA9,
-    'primarytextcolor': #212121,
+    'primary-text-color': #212121,
+    'secondary-text-color': #747474,
     'white-color': #FFFFFF,
     'primary-background-color': #FFFFFF,
     'secondary-background-color': #F9F9F9,
@@ -27,5 +28,14 @@ $customers-logo: (
         @function getCustomers-logo($key) {
             @return map-get($customers-logo, $key)
         }
+
+// EXTEND
+.accent-button-style {
+    background-color: getColor('accent-color');
+    border-radius: 100px;
+    color: getColor('white-text-color');
+}
+
+
 
 

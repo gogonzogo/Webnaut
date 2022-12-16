@@ -1,8 +1,16 @@
 @import '../utilities/variables';
 
 
-.accent-button-style {
-    background: getColor('accent-color');
+.hero__button {
+    background: getColor('white-color');
     border-radius: 100px;
-    color: getColor('white-text-color');
+    color: getColor('accent-color');
+    padding: 8px 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
 }
+
+.project-stages__button {
+    @extend .accent-button-style;
+}
+

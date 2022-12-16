@@ -1,3 +1,13 @@
+.accent-button-style {
+  background-color: #626CA9;
+  border-radius: 100px;
+}
+
+.accent-button-style {
+  background-color: #626CA9;
+  border-radius: 100px;
+}
+
 .our-customers__logo-section {
   background-color: #FFFFFF;
   padding-bottom: 60px;
@@ -66,6 +76,16 @@
   fill: #B1B1B1;
 }
 
+.accent-button-style {
+  background-color: #626CA9;
+  border-radius: 100px;
+}
+
+.accent-button-style {
+  background-color: #626CA9;
+  border-radius: 100px;
+}
+
 .header__section {
   position: absolute;
   z-index: 2;
@@ -80,6 +100,11 @@
 .header__container {
   display: flex;
   justify-content: space-between;
+}
+
+.accent-button-style {
+  background-color: #626CA9;
+  border-radius: 100px;
 }
 
 .hero__section {
@@ -125,6 +150,89 @@
   max-width: 280px;
 }
 
+.accent-button-style {
+  background-color: #626CA9;
+  border-radius: 100px;
+}
+
+.project-stages__section {
+  padding: 40px 0;
+  background-color: #F9F9F9;
+}
+
+.project-stages__primary-title {
+  font-size: 10px;
+  line-height: 1.3;
+  color: #212121;
+}
+
+.project-stages__secondary-title {
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 1.5652173913;
+  text-transform: capitalize;
+  color: #212121;
+}
+
+.project-stages__list-item {
+  background-color: #FFFFFF;
+  border-radius: 17px;
+}
+.project-stages__list-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.project-stages__list-item-title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.6666666667;
+  align-items: flex-end;
+  color: #212121;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+.project-stages__list-item-description {
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: -0.2px;
+  color: #747474;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+.project-stages__list-item-icon {
+  fill: #626CA9;
+  margin-bottom: 36px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.project-stages__button-icon {
+  fill: #FFFFFF;
+  border: 1.3px solid #FFFFFF;
+}
+
+.accent-button-style {
+  background-color: #626CA9;
+  border-radius: 100px;
+}
+
+.accent-button-style {
+  background-color: #626CA9;
+  border-radius: 100px;
+}
+
+.accent-button-style {
+  background-color: #626CA9;
+  border-radius: 100px;
+}
+
+.accent-button-style, .project-stages__button {
+  background-color: #626CA9;
+  border-radius: 100px;
+}
+
 .hero__button {
   background: #FFFFFF;
   border-radius: 100px;
@@ -134,13 +242,8 @@
   margin-left: 20px;
 }
 
-.project-stages__section {
-  padding: 40px 0;
-  background-color: #F9F9F9;
-}
-
 .accent-button-style {
-  background: #626CA9;
+  background-color: #626CA9;
   border-radius: 100px;
 }
 
@@ -151,7 +254,11 @@
   font-size: 25px;
   line-height: 38px;
   text-transform: capitalize;
-  color: #212121;
+}
+
+.accent-button-style {
+  background-color: #626CA9;
+  border-radius: 100px;
 }
 
 .primary-title {
@@ -160,6 +267,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
+  color: #212121;
 }
 
 .secondary-title {
@@ -168,6 +276,7 @@
   font-weight: 600;
   font-size: 27px;
   line-height: 1.4814814815;
+  color: #212121;
 }
 
 .sub-title {
@@ -178,6 +287,7 @@
   line-height: 1.5;
   display: flex;
   align-items: flex-end;
+  color: #212121;
 }
 
 .container {
@@ -186,6 +296,11 @@
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
+}
+
+.accent-button-style {
+  background-color: #626CA9;
+  border-radius: 100px;
 }
 
 * {
