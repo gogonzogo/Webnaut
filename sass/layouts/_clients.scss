@@ -1,25 +1,25 @@
 @import '../utilities/variables';
 
-.our-customers__logo-section {
+.clients__logo-section {
     background-color: getColor('primary-background-color');
-    padding-bottom: 60px;
-    padding-top: 56px;
+    padding-bottom: 30px;
+    padding-top: 28px;
 }
 
-.our-customers__logo-container {
+.clients__logo-container {
     min-width: 290px;
     display: flex;
     justify-content: center;
 }
 
-.our-customers__logo-list {
+.clients__logo-list {
     min-width: 171px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.our-customers__logo-list-item {
+.clients__logo-list-item {
     min-width: 171px;
     display: flex;
     justify-content: center;
@@ -39,11 +39,11 @@
     margin-left: 16px;
 }
 
-.our-customers__logo-list-item {
+.clients__logo-list-item {
 
     &:hover,
     &:focus {
-        @each $i in $customers-logo {
+        @each $i in $customers__logo {
             .#{nth($i,1)}-logo {
                 fill: nth($i, 2);
 
@@ -52,7 +52,7 @@
     }
 }
 
-.our-customers__logo-list-link-icon {
+.clients__logo-list-link-icon {
     background-color: getColor('primary-background-color');
     fill: getColor('customer-logo-fill');
 }

@@ -1,0 +1,16 @@
+@import '../utilities/variables';
+
+.primary-title {
+    font-size: 10px;
+    line-height: calc(13/10);
+    color: getColor('primary-text-color');
+}
+
+.secondary-title {
+    font-weight: 600;
+    font-size: 23px;
+    line-height: calc(36/23);
+    text-transform: capitalize;
+    color: getColor('primary-text-color');
+    margin-bottom: 15px;
+}

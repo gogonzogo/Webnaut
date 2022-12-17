@@ -1,0 +1,37 @@
+@import '../utilities/variables';
+
+
+.hero__button {
+    background: getColor('white-color');
+    border-radius: 100px;
+    border: none;
+    color: getColor('accent-color');
+    padding: 8px 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.project-stages__button {
+    @extend .learn-more-accent-button-style;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(20/12);
+    text-align: center;
+    letter-spacing: -0.37px;
+    text-transform: capitalize;
+    padding: 7px 9px;
+    margin-top: 15px;
+}
+
+.specialization__list-item-button {
+    @extend .learn-more-accent-button-style;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: calc(17/10);
+    text-align: center;
+    letter-spacing: -0.37px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    padding: 4px 9px;
+}
+

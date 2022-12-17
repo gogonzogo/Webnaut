@@ -1,0 +1,39 @@
+@import '../utilities/variables';
+
+.specialization__section {
+    padding: 30px 0;
+}
+
+.specialization__list-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 15px;
+   border-radius: 17px;
+}
+
+.specialization__list-item-title {
+    font-weight: 600;
+        font-size: 17px;
+        line-height: calc(28/17);
+        text-align: center;
+        text-transform: capitalize;
+        color: getColor('primary-text-color');
+        margin-bottom: 15px;
+        padding-top: 15px;
+}
+
+
+
+@each $i in $specialization__items-background-color {
+    .#{nth($i, 1)} {
+        background-color: nth($i, 2);
+    }
+}
+
+@each $i in $specialization__image-widths {
+    .#{nth($i, 1)} {
+        max-width: nth($i, 2);
+    }
+}
+

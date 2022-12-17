@@ -1,22 +1,8 @@
 @import '../utilities/variables';
 
 .project-stages__section {
-    padding: 40px 0;
+    padding: 20px 0;
     background-color: getColor('secondary-background-color');
-}
-
-.project-stages__primary-title {
-    font-size: 10px;
-    line-height: calc(13/10);
-    color: getColor('primary-text-color');
-}
-
-.project-stages__secondary-title {
-    font-weight: 600;
-    font-size: 23px;
-    line-height: calc(36/23);
-    text-transform: capitalize;
-    color: getColor('primary-text-color');
 }
 
 .project-stages__list-item {
@@ -44,6 +30,7 @@
     letter-spacing: -0.2px;
     color: getColor('secondary-text-color');
     padding-left: 15px;
+    padding-right: 15px;
     padding-bottom: 15px;
 }
 
@@ -58,5 +45,5 @@
 
 .project-stages__button-icon {
     fill: getColor('white-color');
-    border: 1.3px solid getColor('white-color');
+    margin-left: 14px;
 }

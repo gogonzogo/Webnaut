@@ -1,6 +1,6 @@
 @use './utilities/variables';
 
-@use './layouts/customer';
+@use './layouts/clients';
 @use './layouts/footer';
 @use './layouts/header';
 @use './layouts/hero';
@@ -16,6 +16,7 @@
 @use './componets/images';
 @use './componets/logo';
 @use './componets/navigation';
+@use './componets/section-titles';
 @use './componets/titles';
 
 @use './base/containers';
