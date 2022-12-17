@@ -249,6 +249,10 @@
   padding-top: 15px;
 }
 
+.specialization__list-item-image {
+  border: 0;
+}
+
 .specialization__desktop-apps {
   background-color: #ECF1FF;
 }

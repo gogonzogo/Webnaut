@@ -23,7 +23,9 @@
         padding-top: 15px;
 }
 
-
+.specialization__list-item-image {
+    border: 0;
+}
 
 @each $i in $specialization__items-background-color {
     .#{nth($i, 1)} {
