@@ -1,4 +1,29 @@
 @import '../utilities/variables';
 
+.our-team__section {
+    background-color: getColor('secondary-background-color');
+}
 
+.our-team__list-item-title {
+    font-size: 10px;
+    line-height: calc(17/10);
+    background: getColor('white-color');
+    border-radius: 100px;
+    color: getColor('primary-text-color');
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 1px 5px;
+}
 
+.our-team__list-item-image {
+    border-radius: getLayouts('card-radius');
+}
+
+.our-team__list-item-name {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(20/12);
+    color: getColor('primary-text-color');
+    margin-bottom: 5px;
+}

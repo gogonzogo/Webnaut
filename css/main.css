@@ -48,7 +48,7 @@
   align-items: flex-start;
 }
 
-.amazon-arrow-logo {
+.clients__amazon-arrow-logo {
   margin-left: 16px;
 }
 
@@ -249,10 +249,6 @@
   padding-top: 15px;
 }
 
-.specialization__list-item-image {
-  border: 0;
-}
-
 .specialization__desktop-apps {
   background-color: #ECF1FF;
 }
@@ -266,15 +262,15 @@
 }
 
 .specialization__desktop-image {
-  max-width: 72%;
+  padding: 0 11%;
 }
 
 .specialization__mobile-image {
-  max-width: 48%;
+  padding: 0 24%;
 }
 
 .specialization__design-solutions-image {
-  max-width: 59%;
+  padding: 0 18%;
 }
 
 .learn-more-accent-button-style {
@@ -291,6 +287,34 @@
   border-radius: 100px;
   border: none;
   color: #FFFFFF;
+}
+
+.our-team__section {
+  background-color: #F9F9F9;
+}
+
+.our-team__list-item-title {
+  font-size: 10px;
+  line-height: 1.7;
+  background: #FFFFFF;
+  border-radius: 100px;
+  color: #212121;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 15px;
+  padding: 1px 5px;
+}
+
+.our-team__list-item-image {
+  border-radius: 17px;
+}
+
+.our-team__list-item-name {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.6666666667;
+  color: #212121;
+  margin-bottom: 5px;
 }
 
 .learn-more-accent-button-style, .specialization__list-item-button, .project-stages__button {
@@ -339,6 +363,12 @@
   border-radius: 100px;
   border: none;
   color: #FFFFFF;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .learn-more-accent-button-style {

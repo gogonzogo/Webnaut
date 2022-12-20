@@ -14,6 +14,14 @@ $colors: (
             @return map-get($colors, $key);
         };
 
+$layouts: (
+    'card-radius': 17px,
+);
+        
+        @function getLayouts($key) {
+            @return map-get($layouts, $key);
+        };
+
 $customers__logo: (
     'clients__adobe': #FA0C00,
     'clients__airbnb': #FF5A5F,
@@ -39,10 +47,10 @@ $specialization__items-background-color: (
             @return map-get($specialization-items-background-color, $key)
         };
 
-$specialization__image-widths: (
-    'specialization__desktop-image': 72%,
-    'specialization__mobile-image': 48%,
-    'specialization__design-solutions-image': 59%,
+$specialization__image-padding: (
+    'specialization__desktop-image': 11%,
+    'specialization__mobile-image': 24%,
+    'specialization__design-solutions-image': 18%,
 );
 
         @function getSpecialization__image-widths($key) {

@@ -5,27 +5,28 @@
 }
 
 .specialization__list-item {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin-bottom: 15px;
-   border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: getLayouts('card-radius');
 }
 
 .specialization__list-item-title {
     font-weight: 600;
-        font-size: 17px;
-        line-height: calc(28/17);
-        text-align: center;
-        text-transform: capitalize;
-        color: getColor('primary-text-color');
-        margin-bottom: 15px;
-        padding-top: 15px;
+    font-size: 17px;
+    line-height: calc(28/17);
+    text-align: center;
+    text-transform: capitalize;
+    color: getColor('primary-text-color');
+    margin-bottom: 15px;
+    padding-top: 15px;
 }
 
-.specialization__list-item-image {
-    border: 0;
-}
+// .specialization__list-item-image {
+//     width: 100%;
+//     height: auto;
+// }
 
 @each $i in $specialization__items-background-color {
     .#{nth($i, 1)} {
@@ -33,9 +34,8 @@
     }
 }
 
-@each $i in $specialization__image-widths {
+@each $i in $specialization__image-padding {
     .#{nth($i, 1)} {
-        max-width: nth($i, 2);
+        padding: 0 nth($i, 2);
     }
 }
-

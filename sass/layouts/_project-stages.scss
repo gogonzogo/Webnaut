@@ -7,7 +7,7 @@
 
 .project-stages__list-item {
     background-color: getColor('white-color');
-    border-radius: 17px;
+    border-radius: getLayouts('card-radius');
 
     &:not(:last-child) {
         margin-bottom: 15px;
@@ -40,8 +40,6 @@
     margin-top: 15px;
     margin-left: 15px;
 }
-
-
 
 .project-stages__button-icon {
     fill: getColor('white-color');
