@@ -1,0 +1,35 @@
+@import '../utilities/variables';
+
+.contacts__list {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contacts__list-item {
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+.contacts__list-item-link {
+    font-size: 10px;
+    line-height: calc(17/10);
+    text-align: left;
+    letter-spacing: -0.2px;
+    color: getColor('white-color');
+    display: flex;
+    align-items: center;
+    
+}
+
+.contacts__link-icon {
+    fill: getColor('white-color');
+    margin-right: 5px;
+    
+}

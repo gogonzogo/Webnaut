@@ -1,0 +1,28 @@
+@import '../utilities/variables';
+
+.social__list {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.social__list-item {
+    &:not(:last-child) {
+        margin-right: 15px;
+    }
+}
+
+.social__list-item-link {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: getColor('white-color');
+    border-radius: 100px;
+
+    &:hover,
+    &:focus {
+        background-color: getColor('accent-color');
+        fill: getColor('white-color');
+    }
+}

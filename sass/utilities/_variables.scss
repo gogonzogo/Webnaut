@@ -7,6 +7,7 @@ $colors: (
     'primary-background-color': #FFFFFF,
     'secondary-background-color': #F9F9F9,
     'third-background-color': #E5E5E5,
+    'footer-background-color': #ECEDF1,
     'customer-logo-fill': #B1B1B1,
 );
 
@@ -59,7 +60,7 @@ $specialization__image-padding: (
 
 
 // EXTEND
-.learn-more-accent-button-style {
+.accent-button-style {
     background-color: getColor('accent-color');
     border-color: getColor('accent-color');
     border-radius: 100px;
@@ -67,6 +68,10 @@ $specialization__image-padding: (
     color: getColor('white-color');
 }
 
-
+%background-blur {
+    background: rgba(98, 108, 169, 0.4);
+    backdrop-filter: blur(8px);
+    border-radius: 27px;
+}
 
 

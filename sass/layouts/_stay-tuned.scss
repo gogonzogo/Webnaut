@@ -1,1 +1,68 @@
 @import '../utilities/variables';
+
+.stay-tuned__section {
+    // background-color: getColor('third-background-color');
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.stay-tuned__container {
+    background-image: url('../images/studio/stay-tuned-laptop-bg-mobile.jpg');
+    min-width: 290px;
+    height: 573px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 17px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blurr__container {
+    background: rgba(98, 108, 169, 0.4);
+    backdrop-filter: blur(8px);
+    border-radius: 27px;
+    padding: 15px 15px;
+}
+
+.stay-tuned__subscribe-container {
+    width: 95%;
+    height: 45%;
+}
+
+.stay-tuned__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(28/18);
+    text-transform: capitalize; 
+    color: getColor('white-color');
+    margin-bottom: 5px;
+    
+}
+
+.stay-tuned__body-text {
+    font-size: 12px;
+    line-height: calc(20/12);
+    color: getColor('white-color');
+    margin-bottom: 15px;
+    min-width: 240px;
+}
+
+.stay-tuned__contacts-social-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    height: auto;
+}
+
+
+
+
+
+

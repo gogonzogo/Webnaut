@@ -23,11 +23,6 @@
     padding-top: 15px;
 }
 
-// .specialization__list-item-image {
-//     width: 100%;
-//     height: auto;
-// }
-
 @each $i in $specialization__items-background-color {
     .#{nth($i, 1)} {
         background-color: nth($i, 2);
@@ -38,4 +33,9 @@
     .#{nth($i, 1)} {
         padding: 0 nth($i, 2);
     }
+}
+
+.specialization__list-item-image {
+    width: auto;
+    height: auto;
 }
