@@ -10,7 +10,6 @@
 
 .stay-tuned__container {
     background-image: url('../images/studio/stay-tuned-laptop-bg-mobile.jpg');
-    min-width: 290px;
     height: 573px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,33 +22,31 @@
 }
 
 .blurr__container {
-    background: rgba(98, 108, 169, 0.4);
-    backdrop-filter: blur(8px);
-    border-radius: 27px;
-    padding: 15px 15px;
+    @include background-blur;
+    padding: 30px;
 }
 
 .stay-tuned__subscribe-container {
-    width: 95%;
-    height: 45%;
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
 }
 
 .stay-tuned__title {
     font-weight: 500;
-    font-size: 18px;
-    line-height: calc(28/18);
+    font-size: 21px;
+    line-height: calc(32/21);
     text-transform: capitalize; 
     color: getColor('white-color');
-    margin-bottom: 5px;
-    
+    margin-bottom: 15px;
+    min-width: 165px;
 }
 
 .stay-tuned__body-text {
-    font-size: 12px;
-    line-height: calc(20/12);
+    font-size: 16px;
+    line-height: calc(24/16);
     color: getColor('white-color');
-    margin-bottom: 15px;
-    min-width: 240px;
+    margin-bottom: 33px;
 }
 
 .stay-tuned__contacts-social-container {
@@ -57,11 +54,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 75%;
-    height: auto;
+    min-width: 225px;
 }
 
+@media screen and (min-width: 480px) {
+    .stay-tuned__container {
+        max-width: 480px;
+        padding: 40px;
+    }
 
+    .stay-tuned__subscribe-container {
+        max-width: 370px;
+    }
+
+    .stay-tuned__contacts-social-container {
+        min-width: 244px;
+    }
+}
 
 
 

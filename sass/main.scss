@@ -1,5 +1,9 @@
 @use './utilities/variables';
 
+@use './base/containers';
+@use './base/global';
+@use './base/sections';
+
 @use './layouts/clients';
 @use './layouts/footer';
 @use './layouts/header';
@@ -21,7 +25,5 @@
 @use './componets/social-links';
 @use './componets/titles';
 
-@use './base/containers';
-@use './base/global';
-@use './base/sections';
+
 

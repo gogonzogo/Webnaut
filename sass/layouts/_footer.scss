@@ -18,6 +18,7 @@
 .footer__nav-list {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .footer__nav-list-item {
@@ -28,13 +29,20 @@
 
 .footer__nav-list-item-link {
     font-weight: 500;
-    font-size: 12px;
-    line-height: calc(20/12);
-    color: getColor('accent-color');
+    font-size: 16px;
+    line-height: calc(24/16);
+    color: getColor('primary-text-color');
+
+        &:hover,
+        &:focus {
+            color: getColor('accent-color');
+        }
 }
 
-.footer__contacts-list-item-link {
-    font-size: 12px;
-    line-height: calc(20/12);
-    color: getColor('accent-color');
+@media screen and (min-width: 480px) {
+    .footer__container {
+        max-width: 480px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
 }

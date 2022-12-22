@@ -2,7 +2,6 @@
 
 .social__list {
     display: flex;
-    margin-bottom: 15px;
 }
 
 .social__list-item {
@@ -19,10 +18,16 @@
     align-items: center;
     background-color: getColor('white-color');
     border-radius: 100px;
+    padding: 9px;
 
     &:hover,
     &:focus {
         background-color: getColor('accent-color');
         fill: getColor('white-color');
     }
+}
+
+// FOOTER SOCIAL LIST
+.footer__social-list {
+    justify-content: center;
 }

@@ -1,13 +1,14 @@
 @import '../utilities/variables';
 
 .project-stages__section {
-    padding: 20px 0;
+    padding: 40px 0;
     background-color: getColor('secondary-background-color');
 }
 
 .project-stages__list-item {
     background-color: getColor('white-color');
     border-radius: getLayouts('card-radius');
+    padding: 30px;
 
     &:not(:last-child) {
         margin-bottom: 15px;
@@ -16,28 +17,28 @@
 
 .project-stages__list-item-title {
     font-weight: 600;
-    font-size: 12px;
-    line-height: calc(20/12);
+    font-size: 16px;
+    line-height: calc(24/16);
     align-items: flex-end;
     color: getColor('primary-text-color');
-    padding-left: 15px;
     margin-bottom: 10px;
 }
 
 .project-stages__list-item-description {
-    font-size: 10px;
-    line-height: calc(16/10);
+    font-size: 14px;
+    line-height: calc(20/14);
     letter-spacing: -0.2px;
     color: getColor('secondary-text-color');
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
 }
 
 .project-stages__list-item-icon {
     fill: getColor('accent-color');
-    margin-bottom: 36px;
-    margin-top: 15px;
-    margin-left: 15px;
+    margin-bottom: 46px;
 }
 
+@media screen and (min-width: 480px) {
+    .project-stages__container {
+        max-width: 480px;
+        padding: 0 15px;
+    }
+}

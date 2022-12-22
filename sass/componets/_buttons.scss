@@ -2,11 +2,14 @@
 
 // HERO BUTTON
 .hero__button {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(24/16);
     background: getColor('white-color');
     border-radius: 100px;
     border: none;
     color: getColor('accent-color');
-    padding: 8px 30px;
+    padding: 16px 63px;
     margin-bottom: 20px;
     margin-left: 20px;
 }
@@ -15,12 +18,12 @@
 .arrow__button {
     @extend .accent-button-style;
     font-weight: 500;
-    font-size: 12px;
-    line-height: calc(20/12);
+    font-size: 16px;
+    line-height: calc(24/16);
     text-align: center;
     letter-spacing: -0.37px;
     text-transform: capitalize;
-    padding: 4px 9px;
+    padding: 14px 17px;
     margin-top: 15px;
 }
 
@@ -42,3 +45,18 @@
     padding: 4px 9px;
 }
 
+// STAY TUNED FORM BUTTON
+.stay-tuned__form-button {
+    @extend .accent-button-style;
+    padding: 6px 16px;
+    font-size: 12px;
+    line-height: calc(20/12);
+    color: getColor('white-color');
+}
+
+@media screen and (min-width: 480px) {
+    .stay-tuned__form-button {
+        font-size: 13px;
+        line-height: calc(20/13);
+    }
+}

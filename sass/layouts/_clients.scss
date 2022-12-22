@@ -2,8 +2,7 @@
 
 .clients__logo-section {
     background-color: getColor('primary-background-color');
-    padding-bottom: 30px;
-    padding-top: 28px;
+    padding: 60px 0;
 }
 
 .clients__logo-container {
@@ -55,4 +54,31 @@
 .clients__logo-list-link-icon {
     background-color: getColor('primary-background-color');
     fill: getColor('customer-logo-fill');
+}
+
+@media screen and (min-width: 480px) {
+    .clients__logo-container {
+        max-width: 480px;
+    }
+
+    .clients__logo-list {
+        max-width: 390px;
+        justify-content: space-between;
+    }
+
+    .clients__logo-list-item {
+        justify-content: space-between;
+
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+
+        &:not(:nth-last-child(-n + 2)) {
+            margin-bottom: 25px;
+        }
+
+        &:nth-child(even) {
+            justify-content: flex-end;
+        }
+    }
 }

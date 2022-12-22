@@ -68,10 +68,15 @@ $specialization__image-padding: (
     color: getColor('white-color');
 }
 
-%background-blur {
+// MIXINS
+@mixin background-blur {
     background: rgba(98, 108, 169, 0.4);
     backdrop-filter: blur(8px);
     border-radius: 27px;
+}
+
+@mixin contacts-styles ($color) {
+    
 }
 
 

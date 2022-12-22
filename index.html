@@ -25,9 +25,23 @@
     <!-- HEADER -->
     <header class="header__section">
         <div class="header__container">
-            <div class="header__logo-container">
-                <a class="logo header__logo" href="#">Webnaut</a>
-            </div>
+            <nav class="header__navigation">
+                <div class="header__logo-container">
+                    <a class="logo header__logo" href="#">Webnaut</a>
+                </div>
+                <ul class="header__nav-list">
+                    <li class="header__nav-list-item">
+                        <a class="header__nav-list-item-link" href="">
+                            Studio
+                        </a>
+                    </li>
+                    <li class="header__nav-list-item">
+                        <a class="header__nav-list-item-link" href="">
+                            Portfolio
+                        </a>
+                    </li>
+                </ul>
+            </nav>
             <!-- MOBILE MENU BUTTON -->
             <div class="mobile__menu-container">
                 <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
@@ -89,10 +103,10 @@
                     </li>
                     <li class="clients__logo-list-item">
                         <a href="" class="clients__logo-list-link amazon__link">
-                            <svg class="clients__logo-list-link-icon clients__amazon-name-logo" width="110" height="18">
+                            <svg class="clients__logo-list-link-icon clients__amazon-name-logo" width="110" height="20">
                                 <use href="./images/sprite.svg#icon-amazon-name"></use>
                             </svg>
-                            <svg class="clients__logo-list-link-icon clients__amazon-arrow-logo" width="58" height="13">
+                            <svg class="clients__logo-list-link-icon clients__amazon-arrow-logo" width="58" height="18">
                                 <use href="./images/sprite.svg#icon-amazon-arrow"></use>
                             </svg>
                         </a>
@@ -208,7 +222,7 @@
                 <p class="our-team__primary-title primary-title">Our Team</p>
                 <h2 class="our-team__secondary-title secondary-title">Meet our professional team!</h2>
                 <ul class="our-team__list">
-                    <li class="our-team__item">
+                    <li class="our-team__list-item">
                         <p class="our-team__list-item-title">Product Designer</p>
                         <img src="./images/studio/our-team-dominic-evans-photo-mobile.jpg" alt="image of Dominic Evans" class="our-team__list-item-image"
                         width="450" height="298">
@@ -244,7 +258,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="our-team__item">
+                    <li class="our-team__list-item">
                         <p class="our-team__list-item-title">Frontend Developer</p>
                         <img src="./images/studio/our-team-amanda-taylor-photo-mobile.jpg" alt="Image of Amanda Taylor" class="our-team__list-item-image"
                         width="450" height="298">
@@ -280,7 +294,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="our-team__item">
+                    <li class="our-team__list-item">
                         <p class="our-team__list-item-title">Marketing</p>
                         <img src="./images/studio/our-team-jane-wilsher-photo-mobile.jpg" alt="Image of Jane Wilsher" class="our-team__list-item-image"
                         width="450" height="298">
@@ -316,7 +330,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="our-team__item">
+                    <li class="our-team__list-item">
                         <p class="our-team__list-item-title">UI Designer</p>
                         <img src="./images/studio/our-team-henry-sharp-photo-mobile.jpg" alt="Image of Henry Sharp" class="our-team__list-item-image"
                         width="450" height="298">
@@ -365,7 +379,7 @@
 
         <!-- STAY TUNED -->
         <section class="section stay-tuned__section">
-            <div class="container stay-tuned__container">
+            <div class="stay-tuned__container container">
                 <div class="stay-tuned__subscribe-container blurr__container">
                     <h3 class="stay-tuned__title">Stay Tuned</h3>
                     <p class="stay-tuned__body-text">Subscribe to our newsletter<br/>
@@ -464,69 +478,69 @@
                     </ul>
                 </nav>
             </div>
-        </div>
-        <!-- FOOTER CONTACTS -->
-        <div class="footer__contacts-list-container">
-            <ul class="footer__contacts-list contacts__list">
-                <li class="footer__contacts-list-item contacts__list-item">
-                    <a class="footer__contacts-list-item-link contacts__list-item-link" href="tel:+4407813797570">
-                        <svg class="footer__contacts-link-icon contacts__link-icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-phone"></use>
-                        </svg>
-                        +44(078)13797570
-                    </a>
-                </li>
-                <li class="footer__contacts-list-item contacts__list-item">
-                    <a class="footer__contacts-list-item-link contacts__list-item-link" href="mailto:sayhello@studio.com">
-                        <svg class="footer__contacts-link-icon contacts__link-icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-mail"></use>
-                        </svg>
-                        sayhello@studio.com
-                    </a>
-                </li>
-                <li class="footer__contacts-list-item contacts__list-item">
-                    <a class="footer__contacts-list-item-link contacts__list-item-link"
-                        href="https://goo.gl/maps/dFMXebZJ56A7usmW9">
-                        <svg class="footer__contacts-link-icon contacts__link-icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-location"></use>
-                        </svg>
-                        87 High Street, London, United Kingdom
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <!-- FOOTER SOCIAL LINKS -->
-        <div class="footer__social-list-container">
-            <ul class="footer__social-list social__list">
-                <li class="footer__social-list-item social__list-item">
-                    <a href="" class="footer__social-list-item-link social__list-item-link">
-                        <svg class="footer__social-list-item-link-icon social__list-item-link-icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="footer__social-list-item social__list-item">
-                    <a href="" class="footer__social-list-item-link social__list-item-link">
-                        <svg class="footer__social-list-item-link-icon social__list-item-link-icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="footer__social-list-item social__list-item">
-                    <a href="" class="footer__social-list-item-link social__list-item-link">
-                        <svg class="footer__social-list-item-link-icon social__list-item-link-icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="footer__social-list-item social__list-item">
-                    <a href="" class="footer__social-list-item-link social__list-item-link">
-                        <svg class="footer__social-list-item-link-icon social__list-item-link-icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+            <!-- FOOTER CONTACTS -->
+            <div class="footer__contacts-list-container">
+                <ul class="footer__contacts-list contacts__list">
+                    <li class="footer__contacts-list-item contacts__list-item">
+                        <a class="footer__contacts-list-item-link contacts__list-item-link" href="tel:+4407813797570">
+                            <svg class="footer__contacts-link-icon contacts__link-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-phone"></use>
+                            </svg>
+                            +44(078)13797570
+                        </a>
+                    </li>
+                    <li class="footer__contacts-list-item contacts__list-item">
+                        <a class="footer__contacts-list-item-link contacts__list-item-link" href="mailto:sayhello@studio.com">
+                            <svg class="footer__contacts-link-icon contacts__link-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-mail"></use>
+                            </svg>
+                            sayhello@studio.com
+                        </a>
+                    </li>
+                    <li class="footer__contacts-list-item contacts__list-item">
+                        <a class="footer__contacts-list-item-link contacts__list-item-link"
+                            href="https://goo.gl/maps/dFMXebZJ56A7usmW9">
+                            <svg class="footer__contacts-link-icon contacts__link-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-location"></use>
+                            </svg>
+                            87 High Street, London, United Kingdom
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- FOOTER SOCIAL LINKS -->
+            <div class="footer__social-list-container">
+                <ul class="footer__social-list social__list">
+                    <li class="footer__social-list-item social__list-item">
+                        <a href="" class="footer__social-list-item-link social__list-item-link">
+                            <svg class="footer__social-list-item-link-icon social__list-item-link-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-list-item social__list-item">
+                        <a href="" class="footer__social-list-item-link social__list-item-link">
+                            <svg class="footer__social-list-item-link-icon social__list-item-link-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-list-item social__list-item">
+                        <a href="" class="footer__social-list-item-link social__list-item-link">
+                            <svg class="footer__social-list-item-link-icon social__list-item-link-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-list-item social__list-item">
+                        <a href="" class="footer__social-list-item-link social__list-item-link">
+                            <svg class="footer__social-list-item-link-icon social__list-item-link-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 
