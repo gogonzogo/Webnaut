@@ -1,16 +1,39 @@
 @import '../utilities/variables';
 
 .primary-title {
-    font-size: 10px;
-    line-height: calc(13/10);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(21/14);
+    text-transform: capitalize;
     color: getColor('primary-text-color');
 }
 
 .secondary-title {
+    font-family: 'Poppins';
+    font-style: normal;
     font-weight: 600;
-    font-size: 23px;
-    line-height: calc(36/23);
+    font-size: 27px;
+    line-height: calc(40/27);
     text-transform: capitalize;
     color: getColor('primary-text-color');
     margin-bottom: 15px;
+}
+
+.sub-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(24/16);
+    display: flex;
+    align-items: flex-end;
+    color: getColor('primary-text-color');
+}
+
+@media screen and (min-width: 480px) {
+    .secondary-title {
+        margin-bottom: 30px;
+    }
 }

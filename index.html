@@ -129,7 +129,7 @@
         <section class="section project-stages__section">
             <div class="container project-stages__container">
                 <p class="project-stages__primary-title primary-title">Project Stages</p>
-                <h2 class="project-stages__secondary-title secondary-title secondary-title">How your project will go?</h2>
+                <h2 class="project-stages__secondary-title secondary-title">How your project will go?</h2>
                 <ul class="project-stages__list">
                     <li class="project-stages__list-item">
                         <a href="" class="project-stages__list-item-icon-link">
@@ -194,23 +194,38 @@
                     <li class="specialization__list-item specialization__desktop-apps">
                         <h3 class="specialization__list-item-title">Desktop Apps</h3>
                         <button class="specialization__list-item-button learn-more__button" type="button">Learn More</button>
-                        <img class="specialization__list-item-image specialization__desktop-image"
-                            src="./images/studio/specialization-macbook-img-mobile.png" alt="Image of Macbook"
-                            width="350" height="171">
+                        <picture>
+                            <source srcset="./images/studio/specialization-macbook-img-desk.png 1x, ./images/studio/specialization-macbook-img-desk-2x.png 2x" media="(min-width: 1280px)" width="286" height="155" />
+                            <source srcset="./images/studio/specialization-macbook-img-tablet.png 1x, ./images/studio/specialization-macbook-img-tablet-2x.png 2x" media="(min-width: 768px)" width="228" height="144" />
+                            <source srcset="./images/studio/specialization-macbook-img-mobile.png 1x, ./images/studio/specialization-macbook-img-mobile-2x.png 2x" media="(min-width: 480px)" width="350" height="171" />
+                            <img class="specialization__list-item-image specialization__desktop-image"
+                                src="./images/studio/specialization-macbook-img-mobile.png" alt="Image of Macbook"
+                                width="350" height="171">
+                        </picture>
                     </li>
                     <li class="specialization__list-item  specialization__mobile-apps">
                         <h3 class="specialization__list-item-title">Mobile Apps</h3>
                         <button class="specialization__list-item-button learn-more__button">Learn More</button>
-                        <img class="specialization__list-item-image specialization__mobile-image"
-                            src="./images/studio/specialization-iphone-img-mobile.png" alt="Image of iPhone" 
-                            width="231" height="171">
+                        <picture>
+                            <source srcset="./images/studio/specialization-iphone-img-desk.png 1x, ./images/studio/specialization-iphone-img-desk-2x.png 2x" media="(min-width: 1280px)" width="209" height="154" />
+                            <source srcset="./images/studio/specialization-iphone-img-tablet.png 1x, ./images/studio/specialization-iphone-img-tablet-2x.png 2x" media="(min-width: 768px)" width="209" height="124" />
+                            <source srcset="./images/studio/specialization-iphone-img-mobile.png 1x, ./images/studio/specialization-iphone-img-mobile-2x.png 2x" media="(min-width: 480px)" width="231" height="171" />
+                            <img class="specialization__list-item-image specialization__mobile-image"
+                                src="./images/studio/specialization-iphone-img-mobile.png" alt="Image of iPhone" 
+                                width="231" height="171">
+                        </picture>
                     </li>
                     <li class="specialization__list-item  specialization__design-solutions">
                         <h3 class="specialization__list-item-title">Design Solutions</h3>
                         <button class="specialization__list-item-button learn-more__button">Learn More</button>
-                        <img class="specialization__list-item-image specialization__design-solutions-image"
-                            src="./images/studio/specialization-3d-img-mobile.png" alt="Image of 3d Object" 
-                            width="285" height="171">
+                        <picture>
+                            <source srcset="./images/studio/specialization-3d-img-desk.png 1x, ./images/studio/specialization-3d-img-desk-2x.png 2x" media="(min-width: 1280px)" width="285" height="179" />
+                            <source srcset="./images/studio/specialization-3d-img-tablet.png 1x, ./images/studio/specialization-3d-img-tablet-2x.png 2x" media="(min-width: 768px)" width="198" height="124" />
+                            <source srcset="./images/studio/specialization-3d-img-mobile.png 1x, ./images/studio/specialization-3d-img-mobile-2x.png 2x" media="(min-width: 480px)" width="285" height="171" />
+                            <img class="specialization__list-item-image specialization__design-solutions-image"
+                                src="./images/studio/specialization-3d-img-mobile.png" alt="Image of 3d Object" 
+                                width="285" height="171">
+                        </picture>
                     </li>
                 </ul>
             </div>

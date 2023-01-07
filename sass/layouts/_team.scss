@@ -38,8 +38,28 @@
 }
 
 @media screen and (min-width: 480px) {
+    .our-team__section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
     .our-team__container {
         max-width: 480px;
         padding: 0 15px;
+    }
+
+    .our-team__list-item-title {
+        font-size: 14px;
+        line-height: calc(21/14);
+        margin-top: 15px;
+        margin-left: 15px;
+        padding: 6px 10px;
+    }
+
+    .our-team__list-item-name {
+        font-size: 16px;
+        line-height: calc(24/16);
+        margin-bottom: 10px;
+        margin-top: 20px;
     }
 }

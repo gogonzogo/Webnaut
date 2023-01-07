@@ -18,7 +18,7 @@ $colors: (
 $layouts: (
     'card-radius': 17px,
 );
-        
+
         @function getLayouts($key) {
             @return map-get($layouts, $key);
         };

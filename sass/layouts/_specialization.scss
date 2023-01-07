@@ -8,8 +8,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 15px;
     border-radius: getLayouts('card-radius');
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
 }
 
 .specialization__list-item-title {
@@ -20,7 +23,7 @@
     text-transform: capitalize;
     color: getColor('primary-text-color');
     margin-bottom: 15px;
-    padding-top: 15px;
+    margin-top: 15px;
 }
 
 @each $i in $specialization__items-background-color {
@@ -41,8 +44,32 @@
 }
 
 @media screen and (min-width: 480px) {
+    .specialization__section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
     .specialization__container {
         max-width: 480px;
         padding: 0 15px;
+    }
+
+    .specialization__list-item {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .specialization__list-item-title {
+        font-size: 21px;
+        line-height: calc(32/21);
+        margin-bottom: 15px;
+        margin-top: 30px;
+    }
+
+    @each $i in $specialization__image-padding {
+        .#{nth($i, 1)} {
+            padding: 0;
+        }
     }
 }

@@ -1,7 +1,7 @@
 @import '../utilities/variables';
 
 .stay-tuned__section {
-    // background-color: getColor('third-background-color');
+    background-color: getColor('primary-background-color');
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 15px;
@@ -58,6 +58,11 @@
 }
 
 @media screen and (min-width: 480px) {
+    .stay-tuned__section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
     .stay-tuned__container {
         max-width: 480px;
         padding: 40px;

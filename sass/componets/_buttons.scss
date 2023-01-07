@@ -9,7 +9,7 @@
     border-radius: 100px;
     border: none;
     color: getColor('accent-color');
-    padding: 16px 63px;
+    padding: 10px 30px;
     margin-bottom: 20px;
     margin-left: 20px;
 }
@@ -55,6 +55,29 @@
 }
 
 @media screen and (min-width: 480px) {
+    .hero__button {
+        padding: 16px 63px;
+    }
+
+    // BUTTONS WITH ARROW POINTING RIGHT
+    .arrow__button {
+        margin-top: 30px;
+    }
+
+    .arrow__button-icon {
+        margin-left: 17px;
+    }
+
+    // SPECIALIZATION BUTTON
+    .specialization__list-item-button {
+        @extend .accent-button-style;
+        font-size: 14px;
+        line-height: calc(21/14);
+        margin-bottom: 30px;
+        padding: 10px 17px;
+    }
+
+    // STAY TUNED FORM BUTTON
     .stay-tuned__form-button {
         font-size: 13px;
         line-height: calc(20/13);
