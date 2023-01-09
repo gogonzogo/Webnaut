@@ -63,3 +63,42 @@
         margin-top: 20px;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .our-team__container {
+        max-width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .our-team__title-container {
+        display: flex;
+        flex-direction: column;
+        order: 1;
+        width: 395px;
+    }
+
+    .our-team__list {
+        display: flex;
+        flex-wrap: wrap;
+        order: 3;
+    }
+
+    .our-team__list-item {
+        width: 354px;
+
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+
+        &:nth-child(2n + 1) {
+            margin-right: 30px;
+        }
+
+        &:nth-child(-n + 2) {
+            margin-bottom: 30px;
+        }
+    }
+}

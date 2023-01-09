@@ -1,4 +1,8 @@
-// MAPS / FUNCTION
+// MAPS / FUNCTION / VARIABLES
+$card-gap: 30px;
+$transition-time: 250ms;
+$transition-time-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 $colors: (
     'accent-color': #626CA9,
     'primary-text-color': #212121,
@@ -56,6 +60,19 @@ $specialization__image-padding: (
 
         @function getSpecialization__image-widths($key) {
             @return getMap($specialization__image-widths, $key)
+        };
+
+$client__position-change: (
+    'adobe': 1,
+    'airbnb': 2,
+    'spotify': 4,
+    'discord': 3,
+    'amazon': 5,
+    'dropbox': 6,
+);
+
+        @function getclient__position-change($key) {
+            @return getMap($client__position-change, $key)
         };
 
 

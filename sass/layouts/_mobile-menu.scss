@@ -1,0 +1,232 @@
+@import '../utilities/variables';
+
+.mobile__menu-container {
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    .menu {
+        display: none;
+    }
+}
+
+.menu .link:hover,
+.menu .link:focus {
+    text-decoration: underline;
+}
+
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+
+@media screen and (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+    fill: getColor('accent-color');
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: getColor('primary-background-color');
+    z-index: 999;
+    transform: translateX(100%);
+    transition: $transition-time $transition-time-function;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: getColor('primary-text-color');
+    transition: color $transition-time $transition-time-function;
+
+    &:hover,
+    &:focus {
+        color: getColor('accent-color');
+    }
+}
+
+.navigation-menu {
+    margin-top: 8px;
+    margin-left: 4px;
+}
+
+.navigation-menu__link {
+    list-style-type: none;
+    position: relative;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.mobile-nav__link {
+    position: relative;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: calc(39/32);
+    letter-spacing: 0.02em;
+    color: #212121;
+    transition: color $transition-time $transition-time-function;
+
+    &:hover,
+    &:focus {
+        color: getColor('accent-color');
+    }
+
+    &:hover::after,
+    &:focus::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 4px;
+        bottom: -1px;
+        left: 0;
+        background-color: getColor('accent-color');
+        border-radius: 2px;
+    }
+}
+
+.active-page {
+    position: relative;
+    color: getColor('accent-color');
+    text-decoration: none;
+
+    &:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 4px;
+        bottom: -1px;
+        left: 0;
+        background-color: getColor('accent-color');
+        border-radius: 2px;
+    }
+}
+
+.contacts-menu {
+    position: absolute;
+    bottom: 110px;
+    left: 32px;
+
+
+    .email__link {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: calc(28/20)40px;
+        letter-spacing: 0.02em;
+        color: #2196F3;
+    }
+
+    .phone__link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: calc(20/16);
+        letter-spacing: 0.02em;
+        color: #757575;
+    }
+
+    .contacts-menu__link {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+}
+
+.social-menu {
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    display: flex;
+    margin-right: 0;
+    margin-bottom: 16px;
+
+    .social-menu__link {
+        font-weight: 500;
+        font-size: 11px;
+        line-height: calc(15/11);
+        letter-spacing: 0.01em;
+        color: #2196F3;
+        margin-top: 64px;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+            padding-right: 10px;
+            border-right: 1px solid rgba(33, 33, 33, 0.2);
+        }
+    }
+}
+
+
+@media screen and (min-width: 480px) {
+    .navigation-menu {
+        margin-top: 16px;
+        margin-left: 8px;
+    }
+
+    .navigation-menu__link {
+        &:not(:last-child) {
+            margin-bottom: 35px;
+        }
+    }
+
+    .mobile-nav__link {
+        font-size: 40px;
+        line-height: calc(47/40);
+    }
+
+    .contacts-menu {
+
+        .email__link {
+            font-size: 34px;
+            line-height: calc(40/34);
+            letter-spacing: 0.02em;
+        }
+
+        .phone__link {
+            font-size: 24px;
+            line-height: calc(28/24);
+            letter-spacing: 0.02em;
+        }
+    }
+
+    .social-menu {
+        margin-right: 83px;
+
+        .social-menu__link {
+            font-size: 18px;
+            line-height: calc(22/18);
+            letter-spacing: 0.02em;
+
+            &:not(:last-child) {
+                margin-right: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+}

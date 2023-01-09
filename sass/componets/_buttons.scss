@@ -10,8 +10,7 @@
     border: none;
     color: getColor('accent-color');
     padding: 10px 30px;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    
 }
 
 // BUTTONS WITH ARROW POINTING RIGHT
@@ -81,5 +80,35 @@
     .stay-tuned__form-button {
         font-size: 13px;
         line-height: calc(20/13);
+        border-style: solid;
+        border-color: getColor('accent-color');
+        border-width: 1px;
     }
+}
+
+@media screen and (min-width: 768px) {
+    .project-stages__button-container {
+        order: 2;
+        width: 155px;
+    }
+
+    .project-stages__button {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .our-team__button-container {
+        order: 2;
+        width: 130px;
+    }
+
+    .our-team__button {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .stay-tuned__form-button {
+        padding: 14px;
+    }
+
 }

@@ -2,7 +2,6 @@
 
 // BASE CONTACTS STYLES
 .contacts__list-item {
-
     &:not(:last-child) {
         margin-bottom: 15px;
     }
@@ -19,8 +18,17 @@
     }
 }
 
-.contacts__link-icon {
+.contacts__list-item-link-icon {
     margin-right: 5px;
+}
+
+// HEADER CONTACTS
+.header__contacts-list {
+    display: none;
+}
+
+.header__contacts-address {
+    display: none;
 }
 
 // STAY TUNED CONTACTS
@@ -57,13 +65,97 @@
     line-height: calc(24/16);
     color: getColor('primary-text-color');
 
+    &:hover,
+    &:focus {
+        color: getColor('accent-color');
+    }
+}
+
+.footer__contacts-list-item-link-icon {
+    fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+    .contacts__list-item-link-icon {
+        margin-right: 10px;
+    }
+
+    .header__contacts-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__contacts-list-item {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .header__contacts-list-item-link {
+        text-decoration: none;
+        font-size: 12px;
+        line-height: calc(18/12);
+        color: getColor('primary-text-color');
+        display: flex;
+
         &:hover,
         &:focus {
             color: getColor('accent-color');
         }
+    }
+
+    .header__contacts-list-item-link-icon {
+        margin-right: 8px;
+        fill: currentColor;
+    }
+
+    // FOOTER CONTACTS
+    .footer__contacts-list {
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
 }
 
-.footer__contacts-link-icon {
-    fill: currentColor;
-}
+@media screen and (min-width: 1200px) {
+    .header__contacts-address {
+        display: flex;
+    }
 
+    .header__contacts-list {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .header__contacts-list-item {
+        &:not(:last-child) {
+            margin-bottom: 0;
+            margin-right: 20px;
+        }
+    }
+
+    .header__contacts-list-item-link {
+        position: relative;
+        font-size: 16px;
+        line-height: calc(24/16);
+
+        &:hover::after,
+        &:focus::after {
+            position: absolute;
+            content: '';
+            width: 110%;
+            height: 5px;
+            bottom: -47px;
+            left: -8px;
+            background-color: getColor('accent-color');
+            border-radius: 2px;
+        }
+    }
+
+        .header__contacts-list-item-link {
+            display: flex;
+        }
+
+    
+
+
+}

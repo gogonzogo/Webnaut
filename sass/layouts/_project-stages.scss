@@ -41,3 +41,46 @@
         padding: 0 15px;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .project-stages__section {
+        padding: 40px 0;
+    }
+
+    .project-stages__container {
+        max-width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .project-stages__title-container {
+        display: flex;
+        flex-direction: column;
+        order: 1;
+        width: 357px;
+    }
+
+    .project-stages__list {
+        display: flex;
+        flex-wrap: wrap;
+        order: 3;
+    }
+
+    .project-stages__list-item {
+        width: 354px;
+
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+
+        &:nth-child(2n + 1) {
+            margin-right: 30px;
+        }
+
+        &:nth-child(-n + 2) {
+            margin-bottom: 30px;
+        }
+    }
+}

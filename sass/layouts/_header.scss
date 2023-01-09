@@ -22,8 +22,23 @@
 }
 
 @media screen and (min-width: 768px) {
+    .header__section {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
     .header__container {
-        max-width: 768px;
+        max-width: 768px;   
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .header__section {
+        padding: 38px 0;
+    }
+
+    .header__container {
+        max-width: 1200px;
+        justify-content: space-between;
+    }
+}

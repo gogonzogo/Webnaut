@@ -73,3 +73,21 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    .specialization__container {
+        max-width: 768px;
+    }
+
+    .specialization__list {
+        display: flex;
+    }
+
+    .specialization__list-item {
+        width: 226px;
+        &:not(:last-child) {
+            margin-bottom: 0;
+            margin-right: 30px;
+        }
+    }
+}

@@ -4,7 +4,9 @@
 .stay-tuned__form {
     display: flex;
     justify-content: space-between;
-    border: 1px solid getColor('accent-color');
+    border-color: getColor('accent-color');
+    border-style: groove;
+    border-width: 1px;
     border-radius: 100px;
     background-color: getColor('white-color');
 }

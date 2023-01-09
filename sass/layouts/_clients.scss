@@ -12,7 +12,6 @@
 }
 
 .clients__logo-list {
-    min-width: 171px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -22,6 +21,7 @@
     min-width: 171px;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     &:not(:last-child) {
         margin-bottom: 25px;
@@ -36,23 +36,21 @@
 
 .clients__amazon-arrow-logo {
     margin-left: 16px;
+    margin-top: -3px;
 }
 
 .clients__logo-list-item {
-
     &:hover,
     &:focus {
         @each $i in $customers__logo {
             .#{nth($i,1)}-logo {
                 fill: nth($i, 2);
-
             }
         }
     }
 }
 
 .clients__logo-list-link-icon {
-    background-color: getColor('primary-background-color');
     fill: getColor('customer-logo-fill');
 }
 
@@ -81,4 +79,84 @@
             justify-content: flex-end;
         }
     }
+}
+
+@media screen and (min-width: 768px) {
+    .clients__logo-container {
+        max-width: 768px;
+    }
+    
+    .clients__logo-list {
+        max-width: 768px;
+        justify-content: normal;
+    }
+    
+    .clients__logo-list-item {
+        width: 246px;
+        justify-content: space-between;
+
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+
+        &:not(:nth-last-child(-n + 2)) {
+            margin-bottom: 0px;
+        }
+
+        &:nth-child(even) {
+            justify-content: normal;
+        }
+
+        &:nth-child(3n + 2) {
+            justify-content: center;
+        }
+
+        &:nth-child(2n + 4) {
+            justify-content: flex-end;
+        }
+
+        &:nth-child(-n + 2),
+        &:nth-child(4) {
+            margin-bottom: 20px;
+        }
+
+    }
+
+    @each $i in $client__position-change {
+        .#{nth($i,1)} {
+            order: nth($i, 2);
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .clients__logo-container {
+        max-width: 1200px;
+    }
+
+    .clients__logo-list {
+        max-width: 1200px;
+    }
+
+    .clients__logo-list-item {
+        order: initial;
+
+        &:nth-child(3n + 2) {
+            justify-content: normal;
+        }
+        
+        &:nth-child(2n + 4) {
+            justify-content: normal;
+        }
+        
+        &:nth-child(-n + 2),
+        &:nth-child(4) {
+            margin-bottom: 0;
+        }
+
+        &:not(:last-child) {
+            margin-right: 65px;
+        }
+    }
+
 }

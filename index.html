@@ -31,7 +31,7 @@
                 </div>
                 <ul class="header__nav-list">
                     <li class="header__nav-list-item">
-                        <a class="header__nav-list-item-link" href="">
+                        <a class="header__nav-list-item-link header__nav-current-page" href="">
                             Studio
                         </a>
                     </li>
@@ -42,6 +42,34 @@
                     </li>
                 </ul>
             </nav>
+            <!-- HEADER CONTACTS -->
+            <ul class="header__contacts-list">
+                <li class="header__contacts-list-item">
+                    <a href="mailto:sayhello@studio.com" class="header__contacts-list-item-link">
+                        <svg class="header__contacts-list-item-link-icon" width="24" height="24">
+                            <use href="./images/sprite.svg#icon-mail"></use>
+                        </svg>
+                        sayhello@studio.com
+                    </a>
+                </li>
+                <li class="header__contacts-list-item">
+                    <a href="tel:+44(078)13797570" class="header__contacts-list-item-link">
+                        <svg class="header__contacts-list-item-link-icon" width="24" height="24">
+                            <use href="./images/sprite.svg#icon-phone"></use>
+                        </svg>
+                        +44(078)13797570
+                    </a>
+                </li>
+                <li class="header__contacts-list-item header__contacts-address">
+                    <a class="header__contacts-list-item-link"
+                        href="https://goo.gl/maps/dFMXebZJ56A7usmW9">
+                        <svg class="header__contacts-list-item-link-icon" width="24" height="24">
+                            <use href="./images/sprite.svg#icon-location"></use>
+                        </svg>
+                        87 High Street, London
+                    </a>
+                </li>
+            </ul>
             <!-- MOBILE MENU BUTTON -->
             <div class="mobile__menu-container">
                 <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
@@ -73,35 +101,35 @@
             <div class="container clients__logo-container">
                 <h2 class="clients__section-title"></h2>
                 <ul class="clients__logo-list">
-                    <li class="clients__logo-list-item">
+                    <li class="clients__logo-list-item adobe">
                         <a href="" class="clients__logo-list-link">
                             <svg class="clients__logo-list-link-icon clients__adobe-logo" width="133" height="48">
                                 <use href="./images/sprite.svg#icon-adobe"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="clients__logo-list-item">
+                    <li class="clients__logo-list-item airbnb">
                         <a href="" class="clients__logo-list-link airbnb">
                             <svg class="clients__logo-list-link-icon clients__airbnb-logo" width="128" height="48">
                                 <use href="./images/sprite.svg#icon-airbnb"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="clients__logo-list-item">
+                    <li class="clients__logo-list-item spotify">
                         <a href="" class="clients__logo-list-link">
                             <svg class="clients__logo-list-link-icon clients__spotify-logo" width="140" height="48">
                                 <use href="./images/sprite.svg#icon-spotify"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="clients__logo-list-item">
+                    <li class="clients__logo-list-item discord">
                         <a href="" class="clients__logo-list-link">
                             <svg class="clients__logo-list-link-icon clients__discord-logo" width="171" height="48">
                                 <use href="./images/sprite.svg#icon-discord"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="clients__logo-list-item">
+                    <li class="clients__logo-list-item amazon">
                         <a href="" class="clients__logo-list-link amazon__link">
                             <svg class="clients__logo-list-link-icon clients__amazon-name-logo" width="110" height="20">
                                 <use href="./images/sprite.svg#icon-amazon-name"></use>
@@ -111,12 +139,13 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="clients__logo-list-item">
+                    <li class="clients__logo-list-item dropbox">
                         <a href="" class="clients__logo-list-link">
                             <svg class="clients__logo-list-link-icon clients__dropbox-box-logo" width="37" height="32">
                                 <use href="./images/sprite.svg#icon-dropbox-box"></use>
                             </svg>
-                            <svg class="clients__logo-list-link-icon clients__dropbox-name-logo" width="117" height="27">
+                            <svg class="clients__logo-list-link-icon clients__dropbox-name-logo" width="117"
+                                height="27">
                                 <use href="./images/sprite.svg#icon-dropbox-name"></use>
                             </svg>
                         </a>
@@ -128,8 +157,10 @@
         <!-- PROJECT STAGES -->
         <section class="section project-stages__section">
             <div class="container project-stages__container">
-                <p class="project-stages__primary-title primary-title">Project Stages</p>
-                <h2 class="project-stages__secondary-title secondary-title">How your project will go?</h2>
+                <div class="project-stages__title-container">
+                    <p class="project-stages__primary-title primary-title">Project Stages</p>
+                    <h2 class="project-stages__secondary-title secondary-title">How your project will go?</h2>
+                </div>
                 <ul class="project-stages__list">
                     <li class="project-stages__list-item">
                         <a href="" class="project-stages__list-item-icon-link">
@@ -175,13 +206,15 @@
                             audience has started using.</p>
                     </li>
                 </ul>
-                <button class="project-stages__button arrow__button" type="button">Learn More
-                    <a href="" class="project-stages__button-icon-link">
-                        <svg class="project-stages__button-icon arrow__button-icon" width="15" height="11">
-                            <use href="./images/sprite.svg#icon-right-arrow"></use>
-                        </svg>
-                    </a>
-                </button>
+                <div class="project-stages__button-container">
+                    <button class="project-stages__button arrow__button" type="button">Learn More
+                        <a href="" class="project-stages__button-icon-link">
+                            <svg class="project-stages__button-icon arrow__button-icon" width="15" height="11">
+                                <use href="./images/sprite.svg#icon-right-arrow"></use>
+                            </svg>
+                        </a>
+                    </button>
+                </div>
             </div>
         </section>
 
@@ -193,11 +226,18 @@
                 <ul class="specialization__list">
                     <li class="specialization__list-item specialization__desktop-apps">
                         <h3 class="specialization__list-item-title">Desktop Apps</h3>
-                        <button class="specialization__list-item-button learn-more__button" type="button">Learn More</button>
+                        <button class="specialization__list-item-button learn-more__button" type="button">Learn
+                            More</button>
                         <picture>
-                            <source srcset="./images/studio/specialization-macbook-img-desk.png 1x, ./images/studio/specialization-macbook-img-desk-2x.png 2x" media="(min-width: 1280px)" width="286" height="155" />
-                            <source srcset="./images/studio/specialization-macbook-img-tablet.png 1x, ./images/studio/specialization-macbook-img-tablet-2x.png 2x" media="(min-width: 768px)" width="228" height="144" />
-                            <source srcset="./images/studio/specialization-macbook-img-mobile.png 1x, ./images/studio/specialization-macbook-img-mobile-2x.png 2x" media="(min-width: 480px)" width="350" height="171" />
+                            <source
+                                srcset="./images/studio/specialization-macbook-img-desk.png 1x, ./images/studio/specialization-macbook-img-desk-2x.png 2x"
+                                media="(min-width: 1280px)" width="286" height="155" />
+                            <source
+                                srcset="./images/studio/specialization-macbook-img-tablet.png 1x, ./images/studio/specialization-macbook-img-tablet-2x.png 2x"
+                                media="(min-width: 768px)" width="228" height="144" />
+                            <source
+                                srcset="./images/studio/specialization-macbook-img-mobile.png 1x, ./images/studio/specialization-macbook-img-mobile-2x.png 2x"
+                                media="(min-width: 480px)" width="350" height="171" />
                             <img class="specialization__list-item-image specialization__desktop-image"
                                 src="./images/studio/specialization-macbook-img-mobile.png" alt="Image of Macbook"
                                 width="350" height="171">
@@ -207,11 +247,17 @@
                         <h3 class="specialization__list-item-title">Mobile Apps</h3>
                         <button class="specialization__list-item-button learn-more__button">Learn More</button>
                         <picture>
-                            <source srcset="./images/studio/specialization-iphone-img-desk.png 1x, ./images/studio/specialization-iphone-img-desk-2x.png 2x" media="(min-width: 1280px)" width="209" height="154" />
-                            <source srcset="./images/studio/specialization-iphone-img-tablet.png 1x, ./images/studio/specialization-iphone-img-tablet-2x.png 2x" media="(min-width: 768px)" width="209" height="124" />
-                            <source srcset="./images/studio/specialization-iphone-img-mobile.png 1x, ./images/studio/specialization-iphone-img-mobile-2x.png 2x" media="(min-width: 480px)" width="231" height="171" />
+                            <source
+                                srcset="./images/studio/specialization-iphone-img-desk.png 1x, ./images/studio/specialization-iphone-img-desk-2x.png 2x"
+                                media="(min-width: 1280px)" width="209" height="154" />
+                            <source
+                                srcset="./images/studio/specialization-iphone-img-tablet.png 1x, ./images/studio/specialization-iphone-img-tablet-2x.png 2x"
+                                media="(min-width: 768px)" width="209" height="124" />
+                            <source
+                                srcset="./images/studio/specialization-iphone-img-mobile.png 1x, ./images/studio/specialization-iphone-img-mobile-2x.png 2x"
+                                media="(min-width: 480px)" width="231" height="171" />
                             <img class="specialization__list-item-image specialization__mobile-image"
-                                src="./images/studio/specialization-iphone-img-mobile.png" alt="Image of iPhone" 
+                                src="./images/studio/specialization-iphone-img-mobile.png" alt="Image of iPhone"
                                 width="231" height="171">
                         </picture>
                     </li>
@@ -219,11 +265,17 @@
                         <h3 class="specialization__list-item-title">Design Solutions</h3>
                         <button class="specialization__list-item-button learn-more__button">Learn More</button>
                         <picture>
-                            <source srcset="./images/studio/specialization-3d-img-desk.png 1x, ./images/studio/specialization-3d-img-desk-2x.png 2x" media="(min-width: 1280px)" width="285" height="179" />
-                            <source srcset="./images/studio/specialization-3d-img-tablet.png 1x, ./images/studio/specialization-3d-img-tablet-2x.png 2x" media="(min-width: 768px)" width="198" height="124" />
-                            <source srcset="./images/studio/specialization-3d-img-mobile.png 1x, ./images/studio/specialization-3d-img-mobile-2x.png 2x" media="(min-width: 480px)" width="285" height="171" />
+                            <source
+                                srcset="./images/studio/specialization-3d-img-desk.png 1x, ./images/studio/specialization-3d-img-desk-2x.png 2x"
+                                media="(min-width: 1280px)" width="285" height="179" />
+                            <source
+                                srcset="./images/studio/specialization-3d-img-tablet.png 1x, ./images/studio/specialization-3d-img-tablet-2x.png 2x"
+                                media="(min-width: 768px)" width="198" height="124" />
+                            <source
+                                srcset="./images/studio/specialization-3d-img-mobile.png 1x, ./images/studio/specialization-3d-img-mobile-2x.png 2x"
+                                media="(min-width: 480px)" width="285" height="171" />
                             <img class="specialization__list-item-image specialization__design-solutions-image"
-                                src="./images/studio/specialization-3d-img-mobile.png" alt="Image of 3d Object" 
+                                src="./images/studio/specialization-3d-img-mobile.png" alt="Image of 3d Object"
                                 width="285" height="171">
                         </picture>
                     </li>
@@ -234,13 +286,26 @@
         <!-- OUR TEAM -->
         <section class="section our-team__section">
             <div class="container our-team__container">
-                <p class="our-team__primary-title primary-title">Our Team</p>
-                <h2 class="our-team__secondary-title secondary-title">Meet our professional team!</h2>
+                <div class="our-team__title-container">
+                    <p class="our-team__primary-title primary-title">Our Team</p>
+                    <h2 class="our-team__secondary-title secondary-title">Meet our professional team!</h2>
+                </div>
                 <ul class="our-team__list">
                     <li class="our-team__list-item">
                         <p class="our-team__list-item-title">Product Designer</p>
-                        <img src="./images/studio/our-team-dominic-evans-photo-mobile.jpg" alt="image of Dominic Evans" class="our-team__list-item-image"
-                        width="450" height="298">
+                        <picture>
+                            <source
+                                srcset="./images/studio/our-team-dominic-evans-photo-desk.jpg 1x, ./images/studio/our-team-dominic-evans-photo-desk-2x.jpg 2x"
+                                media="(min-width: 1200px)" width="270" height="267">
+                            <source
+                                srcset="./images/studio/our-team-dominic-evans-photo-tablet.jpg 1x, ./images/studio/our-team-dominic-evans-photo-tablet-2x.jpg 2x"
+                                media="(min-width: 768px)" width="354" height="267">
+                            <source
+                                srcset="./images/studio/our-team-dominic-evans-photo-mobile.jpg 1x, ./images/studio/our-team-dominic-evans-photo-mobile-2x.jpg 2x"
+                                media="(min-width: 480px)" width="450" height="298">
+                            <img src="./images/studio/our-team-dominic-evans-photo-mobile.jpg"
+                                alt="image of Dominic Evans" class="our-team__list-item-image" width="450" height="298">
+                        </picture>
                         <p class="our-team__list-item-name">Dominic Evans</p>
                         <ul class="our-team__social-list social__list">
                             <li class="our-team__social-list-item social__list-item">
@@ -275,8 +340,19 @@
                     </li>
                     <li class="our-team__list-item">
                         <p class="our-team__list-item-title">Frontend Developer</p>
-                        <img src="./images/studio/our-team-amanda-taylor-photo-mobile.jpg" alt="Image of Amanda Taylor" class="our-team__list-item-image"
-                        width="450" height="298">
+                        <picture>
+                            <source
+                                srcset="./images/studio/our-team-amanda-taylor-photo-desk.jpg 1x, ./images/studio/our-team-amanda-taylor-photo-desk-2x.jpg 2x"
+                                media="(min-width: 1200px)" width="270" height="267">
+                            <source
+                                srcset="./images/studio/our-team-amanda-taylor-photo-tablet.jpg 1x, ./images/studio/our-team-amanda-taylor-photo-tablet-2x.jpg 2x"
+                                media="(min-width: 768px)" width="354" height="267">
+                            <source
+                                srcset="./images/studio/our-team-amanda-taylor-photo-mobile.jpg 1x, ./images/studio/our-team-amanda-taylor-photo-mobile-2x.jpg 2x"
+                                media="(min-width: 480px)" width="450" height="298">
+                            <img src="./images/studio/our-team-amanda-taylor-photo-mobile.jpg"
+                                alt="Image of Amanda Taylor" class="our-team__list-item-image" width="450" height="298">
+                        </picture>
                         <p class="our-team__list-item-name">Amanda Taylor</p>
                         <ul class="our-team__social-list social__list">
                             <li class="our-team__social-list-item social__list-item">
@@ -311,8 +387,19 @@
                     </li>
                     <li class="our-team__list-item">
                         <p class="our-team__list-item-title">Marketing</p>
-                        <img src="./images/studio/our-team-jane-wilsher-photo-mobile.jpg" alt="Image of Jane Wilsher" class="our-team__list-item-image"
-                        width="450" height="298">
+                        <picture>
+                            <source
+                                srcset="./images/studio/our-team-jane-wilsher-photo-desk.jpg 1x, ./images/studio/our-team-jane-wilsher-photo-desk-2x.jpg 2x"
+                                media="(min-width: 1200px)" width="270" height="267">
+                            <source
+                                srcset="./images/studio/our-team-jane-wilsher-photo-tablet.jpg 1x, ./images/studio/our-team-jane-wilsher-photo-tablet-2x.jpg 2x"
+                                media="(min-width: 768px)" width="354" height="267">
+                            <source
+                                srcset="./images/studio/our-team-jane-wilsher-photo-mobile.jpg 1x, ./images/studio/our-team-jane-wilsher-photo-mobile-2x.jpg 2x"
+                                media="(min-width: 480px)" width="450" height="298">
+                            <img src="./images/studio/our-team-jane-wilsher-photo-mobile.jpg"
+                                alt="Image of Jane Wilsher" class="our-team__list-item-image" width="450" height="298">
+                        </picture>
                         <p class="our-team__list-item-name">Jane Wilsher</p>
                         <ul class="our-team__social-list social__list">
                             <li class="our-team__social-list-item social__list-item">
@@ -347,8 +434,19 @@
                     </li>
                     <li class="our-team__list-item">
                         <p class="our-team__list-item-title">UI Designer</p>
-                        <img src="./images/studio/our-team-henry-sharp-photo-mobile.jpg" alt="Image of Henry Sharp" class="our-team__list-item-image"
-                        width="450" height="298">
+                        <picture>
+                            <source
+                                srcset="./images/studio/our-team-henry-sharp-photo-desk.jpg 1x, ./images/studio/our-team-henry-sharp-photo-desk-2x.jpg 2x"
+                                media="(min-width: 1200px)" width="270" height="267">
+                            <source
+                                srcset="./images/studio/our-team-henry-sharp-photo-tablet.jpg 1x, ./images/studio/our-team-henry-sharp-photo-tablet-2x.jpg 2x"
+                                media="(min-width: 768px)" width="354" height="267">
+                            <source
+                                srcset="./images/studio/our-team-henry-sharp-photo-mobile.jpg 1x, ./images/studio/our-team-henry-sharp-photo-mobile-2x.jpg 2x"
+                                media="(min-width: 480px)" width="450" height="298">
+                            <img src="./images/studio/our-team-henry-sharp-photo-mobile.jpg" alt="Image of Henry Sharp"
+                                class="our-team__list-item-image" width="450" height="298">
+                        </picture>
                         <p class="our-team__list-item-name">Henry Sharp</p>
                         <ul class="our-team__social-list social__list">
                             <li class="our-team__social-list-item social__list-item">
@@ -382,13 +480,15 @@
                         </ul>
                     </li>
                 </ul>
-                <button class="our-team__button arrow__button" type="button">Hire Us
-                    <a href="" class="our-team__button-icon-link">
+                <div class="our-team__button-container">
+                    <button class="our-team__button arrow__button" type="button">Hire Us
+                        <a href="" class="our-team__button-icon-link">
                             <svg class="our-team__button-icon arrow__button-icon" width="15" height="11">
-                        <use href="./images/sprite.svg#icon-right-arrow"></use>
-                        </svg>
-                    </a>
-                </button>
+                                <use href="./images/sprite.svg#icon-right-arrow"></use>
+                            </svg>
+                        </a>
+                    </button>
+                </div>
             </div>
         </section>
 
@@ -397,8 +497,8 @@
             <div class="stay-tuned__container container">
                 <div class="stay-tuned__subscribe-container blurr__container">
                     <h3 class="stay-tuned__title">Stay Tuned</h3>
-                    <p class="stay-tuned__body-text">Subscribe to our newsletter<br/>
-                    to receive the latest updates</p>
+                    <p class="stay-tuned__body-text">Subscribe to our newsletter<br />
+                        to receive the latest updates</p>
                     <form class="stay-tuned__form" name="newsletter_signup_form" autocomplete="on" novalidate>
                         <label>
                             <input type="text" class="stay-tuned__form-input" name="email" placeholder="E-mail" />
@@ -410,27 +510,33 @@
                     <div class="stay-tuned__contacts-list-container">
                         <ul class="stay-tuned__contacts-list contacts__list">
                             <li class="stay-tuned__contacts-list-item contacts__list-item">
-                                <a class="stay-tuned__contacts-list-item-link contacts__list-item-link" href="tel:+4407813797570">
-                                    <svg class="stay-tuned__contacts-link-icon contacts__link-icon" width="20" height="20">
+                                <a class="stay-tuned__contacts-list-item-link contacts__list-item-link"
+                                    href="tel:+4407813797570">
+                                    <svg class="stay-tuned__contacts-link-icon contacts__list-item-link-icon" width="20"
+                                        height="20">
                                         <use href="./images/sprite.svg#icon-phone"></use>
                                     </svg>
                                     +44 (078) 1379 7570
                                 </a>
                             </li>
                             <li class="stay-tuned__contacts-list-item contacts__list-item">
-                                <a class="stay-tuned__contacts-list-item-link contacts__list-item-link" href="mailto:sayhello@studio.com">
-                                    <svg class="stay-tuned__contacts-link-icon contacts__link-icon" width="20" height="20">
+                                <a class="stay-tuned__contacts-list-item-link contacts__list-item-link"
+                                    href="mailto:sayhello@studio.com">
+                                    <svg class="stay-tuned__contacts-link-icon contacts__list-item-link-icon" width="20"
+                                        height="20">
                                         <use href="./images/sprite.svg#icon-mail"></use>
                                     </svg>
                                     sayhello@studio.com
                                 </a>
                             </li>
                             <li class="stay-tuned__contacts-list-item contacts__list-item">
-                                <a class="stay-tuned__contacts-list-item-link contacts__list-item-link" href="https://goo.gl/maps/dFMXebZJ56A7usmW9">
-                                    <svg class="stay-tuned__contacts-link-icon contacts__link-icon" width="20" height="20">
+                                <a class="stay-tuned__contacts-list-item-link contacts__list-item-link"
+                                    href="https://goo.gl/maps/dFMXebZJ56A7usmW9">
+                                    <svg class="stay-tuned__contacts-link-icon contacts__list-item-link-icon" width="20"
+                                        height="20">
                                         <use href="./images/sprite.svg#icon-location"></use>
                                     </svg>
-                                    87 High Street, London, United Kingdom
+                                    87 High Street, London,<br/> United Kingdom
                                 </a>
                             </li>
                         </ul>
@@ -439,28 +545,32 @@
                         <ul class="stay-tuned__social-list social__list">
                             <li class="stay-tuned__social-list-item social__list-item">
                                 <a href="" class="stay-tuned__social-list-item-link social__list-item-link">
-                                    <svg class="stay-tuned__social-list-item-link-icon social__list-item-link-icon" width="20" height="20">
+                                    <svg class="stay-tuned__social-list-item-link-icon social__list-item-link-icon"
+                                        width="20" height="20">
                                         <use href="./images/sprite.svg#icon-instagram"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="stay-tuned__social-list-item social__list-item">
                                 <a href="" class="stay-tuned__social-list-item-link social__list-item-link">
-                                    <svg class="stay-tuned__social-list-item-link-icon social__list-item-link-icon" width="20" height="20">
+                                    <svg class="stay-tuned__social-list-item-link-icon social__list-item-link-icon"
+                                        width="20" height="20">
                                         <use href="./images/sprite.svg#icon-twitter"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="stay-tuned__social-list-item social__list-item">
                                 <a href="" class="stay-tuned__social-list-item-link social__list-item-link">
-                                    <svg class="stay-tuned__social-list-item-link-icon social__list-item-link-icon" width="20" height="20">
+                                    <svg class="stay-tuned__social-list-item-link-icon social__list-item-link-icon"
+                                        width="20" height="20">
                                         <use href="./images/sprite.svg#icon-facebook"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="stay-tuned__social-list-item social__list-item">
                                 <a href="" class="stay-tuned__social-list-item-link social__list-item-link">
-                                    <svg class="stay-tuned__social-list-item-link-icon social__list-item-link-icon" width="20" height="20">
+                                    <svg class="stay-tuned__social-list-item-link-icon social__list-item-link-icon"
+                                        width="20" height="20">
                                         <use href="./images/sprite.svg#icon-linkedin"></use>
                                     </svg>
                                 </a>
@@ -475,81 +585,92 @@
     <!-- FOOTER -->
     <footer class="section footer__section">
         <div class="footer__container">
-            <!-- FOOTER NAV -->
-            <div class="footer__nav-container">
-                <nav class="footer__navigation">
-                    <a href="" class="logo footer__logo">Webnaut</a>
-                    <ul class="footer__nav-list">
-                        <li class="footer__nav-list-item"> 
-                            <a class="footer__nav-list-item-link" href="">
-                                Studio
+            <div class="footer__nav-contacts-container">
+                <!-- FOOTER NAV -->
+                <div class="footer__nav-container">
+                    <nav class="footer__navigation">
+                        <a href="" class="logo footer__logo">Webnaut</a>
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-list-item">
+                                <a class="footer__nav-list-item-link" href="">
+                                    Studio
+                                </a>
+                            </li>
+                            <li class="footer__nav-list-item">
+                                <a class="footer__nav-list-item-link" href="">
+                                    Portfolio
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- FOOTER CONTACTS -->
+                <div class="footer__contacts-list-container">
+                    <ul class="footer__contacts-list contacts__list">
+                        <li class="footer__contacts-list-item contacts__list-item">
+                            <a class="footer__contacts-list-item-link contacts__list-item-link"
+                                href="tel:+4407813797570">
+                                <svg class="footer__contacts-list-item-link-icon contacts__list-item-link-icon"
+                                    width="24" height="24">
+                                    <use href="./images/sprite.svg#icon-phone"></use>
+                                </svg>
+                                +44(078)13797570
                             </a>
                         </li>
-                        <li class="footer__nav-list-item"> 
-                            <a class="footer__nav-list-item-link" href="">
-                                Portfolio
+                        <li class="footer__contacts-list-item contacts__list-item">
+                            <a class="footer__contacts-list-item-link contacts__list-item-link"
+                                href="mailto:sayhello@studio.com">
+                                <svg class="footer__contacts-list-item-link-icon contacts__list-item-link-icon"
+                                    width="24" height="24">
+                                    <use href="./images/sprite.svg#icon-mail"></use>
+                                </svg>
+                                sayhello@studio.com
+                            </a>
+                        </li>
+                        <li class="footer__contacts-list-item contacts__list-item">
+                            <a class="footer__contacts-list-item-link contacts__list-item-link"
+                                href="https://goo.gl/maps/dFMXebZJ56A7usmW9">
+                                <svg class="footer__contacts-list-item-link-icon contacts__list-item-link-icon"
+                                    width="24" height="24">
+                                    <use href="./images/sprite.svg#icon-location"></use>
+                                </svg>
+                                87 High Street, London, United Kingdom
                             </a>
                         </li>
                     </ul>
-                </nav>
-            </div>
-            <!-- FOOTER CONTACTS -->
-            <div class="footer__contacts-list-container">
-                <ul class="footer__contacts-list contacts__list">
-                    <li class="footer__contacts-list-item contacts__list-item">
-                        <a class="footer__contacts-list-item-link contacts__list-item-link" href="tel:+4407813797570">
-                            <svg class="footer__contacts-link-icon contacts__link-icon" width="20" height="20">
-                                <use href="./images/sprite.svg#icon-phone"></use>
-                            </svg>
-                            +44(078)13797570
-                        </a>
-                    </li>
-                    <li class="footer__contacts-list-item contacts__list-item">
-                        <a class="footer__contacts-list-item-link contacts__list-item-link" href="mailto:sayhello@studio.com">
-                            <svg class="footer__contacts-link-icon contacts__link-icon" width="20" height="20">
-                                <use href="./images/sprite.svg#icon-mail"></use>
-                            </svg>
-                            sayhello@studio.com
-                        </a>
-                    </li>
-                    <li class="footer__contacts-list-item contacts__list-item">
-                        <a class="footer__contacts-list-item-link contacts__list-item-link"
-                            href="https://goo.gl/maps/dFMXebZJ56A7usmW9">
-                            <svg class="footer__contacts-link-icon contacts__link-icon" width="20" height="20">
-                                <use href="./images/sprite.svg#icon-location"></use>
-                            </svg>
-                            87 High Street, London, United Kingdom
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
             <!-- FOOTER SOCIAL LINKS -->
             <div class="footer__social-list-container">
                 <ul class="footer__social-list social__list">
                     <li class="footer__social-list-item social__list-item">
                         <a href="" class="footer__social-list-item-link social__list-item-link">
-                            <svg class="footer__social-list-item-link-icon social__list-item-link-icon" width="20" height="20">
+                            <svg class="footer__social-list-item-link-icon social__list-item-link-icon" width="20"
+                                height="20">
                                 <use href="./images/sprite.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer__social-list-item social__list-item">
                         <a href="" class="footer__social-list-item-link social__list-item-link">
-                            <svg class="footer__social-list-item-link-icon social__list-item-link-icon" width="20" height="20">
+                            <svg class="footer__social-list-item-link-icon social__list-item-link-icon" width="20"
+                                height="20">
                                 <use href="./images/sprite.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer__social-list-item social__list-item">
                         <a href="" class="footer__social-list-item-link social__list-item-link">
-                            <svg class="footer__social-list-item-link-icon social__list-item-link-icon" width="20" height="20">
+                            <svg class="footer__social-list-item-link-icon social__list-item-link-icon" width="20"
+                                height="20">
                                 <use href="./images/sprite.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer__social-list-item social__list-item">
                         <a href="" class="footer__social-list-item-link social__list-item-link">
-                            <svg class="footer__social-list-item-link-icon social__list-item-link-icon" width="20" height="20">
+                            <svg class="footer__social-list-item-link-icon social__list-item-link-icon" width="20"
+                                height="20">
                                 <use href="./images/sprite.svg#icon-linkedin"></use>
                             </svg>
                         </a>

@@ -46,3 +46,21 @@
         padding: 0 15px;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .footer__container {
+        max-width: 768px;
+        padding: 0 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__logo {
+        justify-content: flex-start;
+    }
+
+    .footer__nav-list {
+        justify-content: flex-start;
+    }
+
+}

@@ -17,11 +17,11 @@
                 url('../images/studio/hero-bg-mobile-2x.jpg');
         }
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
         background-image: linear-gradient(69.43deg, rgba(59, 8, 85, 0.2) 47.94%, rgba(135, 111, 173, 0) 79.74%),
             url('../images/studio/hero-bg-tablet.jpg');
 
-        @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2),
+        @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(69.43deg, rgba(59, 8, 85, 0.2) 47.94%, rgba(135, 111, 173, 0) 79.74%),
@@ -29,11 +29,14 @@
         }
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         background-image: linear-gradient(69.43deg, rgba(59, 8, 85, 0.2) 47.94%, rgba(135, 111, 173, 0) 79.74%),
             url('../images/studio/hero-bg-desktop.jpg');
+        height: 548px;
+        width: 1200px;
 
-        @media screen and (min-width: 768px)and (max-width: 1200px) and (min-device-pixel-ratio: 2),
+
+        @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(69.43deg, rgba(59, 8, 85, 0.2) 47.94%, rgba(135, 111, 173, 0) 79.74%),
@@ -47,8 +50,8 @@
     backdrop-filter: blur(8px);
     border-radius: 27px;
     color: getColor('white-color');
-    bottom: 52px;
     width: 75%;
+    padding: 20px 20px;
 }
 
 .hero__title-text {
@@ -58,7 +61,7 @@
     font-size: 22px;
     line-height: calc(33/22);
     text-transform: capitalize;
-    padding: 20px 20px 10px 20px;
+    margin-bottom: 10px;
 }
 
 .hero__body-text {
@@ -67,7 +70,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: calc(21/14);
-    padding: 0 54px 25px 20px;
+    margin-bottom: 25px;
 }
 
 @media screen and (min-width: 480px) {
@@ -84,11 +87,57 @@
     .hero__text-container {
         min-width: 360px;
     }
+
+    .hero__body-text {
+        width: 286px;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .hero__container {
         max-width: 768px;
+    }
+
+    .hero__text-container {
+        padding: 30px 30px;
+        width: 455px;
+    }
+
+    .hero__title-text {
+        font-size: 26px;
+        line-height: calc(39/26);
+        width: 378px;
+    }
+
+    .hero__body-text {
+        font-size: 16px;
+        line-height: calc(24/16);
+        width: 395px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero__section {
+        padding: 156px 0 72px 0;
+    }
+
+    .hero__container {
+        max-width: 1200px;
+    }
+
+    .hero__text-container {
+        width: 590px;
+    }
+
+    .hero__title-text {
+        font-size: 36px;
+        line-height: calc(46/36);
+        width: 530px;
+        margin-bottom: 30px;
+    }
+
+    .hero__body-text {
+        margin-bottom: 35px;
     }
 }
 
