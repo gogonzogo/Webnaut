@@ -43,6 +43,39 @@ ul {
   list-style: none;
 }
 
+@media screen and (min-width: 1200px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__section {
+    order: 1;
+  }
+  .hero__section {
+    order: 2;
+  }
+  .clients__logo-section {
+    order: 3;
+  }
+  .project-stages__section {
+    order: 5;
+  }
+  .specialization__section {
+    order: 4;
+  }
+  .studio-portfolio__section {
+    order: 6;
+  }
+  .our-team__section {
+    order: 7;
+  }
+  .stay-tuned__section {
+    order: 8;
+  }
+  .footer__section {
+    order: 9;
+  }
+}
 .accent-button-style {
   background-color: #626CA9;
   border-color: #626CA9;
@@ -189,14 +222,20 @@ ul {
   }
 }
 @media screen and (min-width: 1200px) {
+  .clients__logo-section {
+    padding: 133px 0 80px 0;
+  }
   .clients__logo-container {
     max-width: 1200px;
   }
   .clients__logo-list {
     max-width: 1200px;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
   }
   .clients__logo-list-item {
-    order: initial;
+    width: 0;
+    justify-content: space-evenly;
   }
   .clients__logo-list-item:nth-child(3n+2) {
     justify-content: normal;
@@ -208,7 +247,46 @@ ul {
     margin-bottom: 0;
   }
   .clients__logo-list-item:not(:last-child) {
+    margin-right: 0;
+  }
+  .clients__logo-list-item:not(:nth-child(3)) {
     margin-right: 65px;
+  }
+  .adobe {
+    order: 1;
+  }
+  .airbnb {
+    order: 3;
+  }
+  .spotify {
+    order: 6;
+  }
+  .discord {
+    order: 2;
+  }
+  .amazon {
+    order: 5;
+  }
+  .dropbox {
+    order: 4;
+  }
+  .adobe {
+    min-width: 133px;
+  }
+  .airbnb {
+    min-width: 128px;
+  }
+  .spotify {
+    min-width: 140px;
+  }
+  .discord {
+    min-width: 171px;
+  }
+  .amazon {
+    min-width: 110px;
+  }
+  .dropbox {
+    min-width: 171px;
   }
 }
 .accent-button-style {
@@ -289,6 +367,8 @@ ul {
   padding-bottom: 30px;
   padding-left: 15px;
   padding-right: 15px;
+  display: flex;
+  order: 6;
 }
 
 .header__container {
@@ -357,7 +437,6 @@ ul {
   .hero__section {
     background-image: linear-gradient(69.43deg, rgba(59, 8, 85, 0.2) 47.94%, rgba(135, 111, 173, 0) 79.74%), url("../images/studio/hero-bg-desktop.jpg");
     height: 548px;
-    width: 1200px;
   }
 }
 @media screen and (min-width: 1200px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -980,6 +1059,18 @@ ul {
     margin-top: 0;
   }
 }
+.accent-button-style {
+  background-color: #626CA9;
+  border-color: #626CA9;
+  border-radius: 100px;
+  border: none;
+  color: #FFFFFF;
+}
+
+.studio-portfolio__section {
+  display: none;
+}
+
 .accent-button-style {
   background-color: #626CA9;
   border-color: #626CA9;

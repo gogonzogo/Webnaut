@@ -23,9 +23,9 @@ $layouts: (
     'card-radius': 17px,
 );
 
-        @function getLayouts($key) {
-            @return map-get($layouts, $key);
-        };
+@function getLayouts($key) {
+    @return map-get($layouts, $key);
+};
 
 $customers__logo: (
     'clients__adobe': #FA0C00,
@@ -38,9 +38,9 @@ $customers__logo: (
     'clients__dropbox-box': #0061FF,
 );
 
-        @function getCustomers-logo($key) {
-            @return map-get($customers-logo, $key)
-        };
+@function getCustomers-logo($key) {
+    @return map-get($customers-logo, $key)
+};
 
 $specialization__items-background-color: (
     'specialization__desktop-apps': #ECF1FF,
@@ -48,9 +48,9 @@ $specialization__items-background-color: (
     'specialization__design-solutions': #F3FBFF,
 );
 
-        @function getSpecialization__background-color($key) {
-            @return map-get($specialization-items-background-color, $key)
-        };
+@function getSpecialization__background-color($key) {
+    @return map-get($specialization-items-background-color, $key)
+};
 
 $specialization__image-padding: (
     'specialization__desktop-image': 11%,
@@ -58,11 +58,11 @@ $specialization__image-padding: (
     'specialization__design-solutions-image': 18%,
 );
 
-        @function getSpecialization__image-widths($key) {
-            @return getMap($specialization__image-widths, $key)
-        };
+@function getSpecialization__image-widths($key) {
+    @return getMap($specialization__image-widths, $key)
+};
 
-$client__position-change: (
+$client__position-change-tablet: (
     'adobe': 1,
     'airbnb': 2,
     'spotify': 4,
@@ -71,10 +71,51 @@ $client__position-change: (
     'dropbox': 6,
 );
 
-        @function getclient__position-change($key) {
-            @return getMap($client__position-change, $key)
-        };
+@function getclient__position-change-tablet($key) {
+    @return getMap($client__position-change-tablet, $key)
+};
 
+$client__position-change-desktop: (
+    'adobe': 1,
+    'airbnb': 3,
+    'spotify': 6,
+    'discord': 2,
+    'amazon': 5,
+    'dropbox': 4,
+);
+
+@function getclient__position-change-desktop($key) {
+    @return getMap($client__position-change-desktop, $key)
+};
+
+$client__logo-width-desktop: (
+    'adobe': 133px,
+    'airbnb': 128px,
+    'spotify': 140px,
+    'discord': 171px,
+    'amazon': 110px,
+    'dropbox': 171px,
+);
+
+@function getclient__logo-width-desktop($key) {
+    @return getMap($client__logo-width-desktop, $key)
+};
+
+$desktop__section-order: (
+    'header__section': 1,
+    'hero__section': 2,
+    'clients__logo-section': 3,
+    'project-stages__section': 5,
+    'specialization__section': 4,
+    'studio-portfolio__section': 6,
+    'our-team__section': 7,
+    'stay-tuned__section': 8,
+    'footer__section': 9,
+);
+
+@function getdesktop__section-order($key) {
+    @return getMap($desktop__section-order, $key)
+};
 
 // EXTEND
 .accent-button-style {

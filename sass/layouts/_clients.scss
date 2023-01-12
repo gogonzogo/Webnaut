@@ -122,7 +122,7 @@
 
     }
 
-    @each $i in $client__position-change {
+    @each $i in $client__position-change-tablet {
         .#{nth($i,1)} {
             order: nth($i, 2);
         }
@@ -130,16 +130,23 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .clients__logo-section {
+        padding: 133px 0 80px 0;
+    }
+
     .clients__logo-container {
         max-width: 1200px;
     }
 
     .clients__logo-list {
         max-width: 1200px;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
     }
 
     .clients__logo-list-item {
-        order: initial;
+        width: 0;
+        justify-content: space-evenly;
 
         &:nth-child(3n + 2) {
             justify-content: normal;
@@ -155,8 +162,23 @@
         }
 
         &:not(:last-child) {
+            margin-right: 0;
+        }
+
+        &:not(:nth-child(3)) {
             margin-right: 65px;
         }
     }
 
+    @each $i in $client__position-change-desktop {
+        .#{nth($i,1)} {
+            order: nth($i, 2);
+        }
+    }
+
+    @each $i in $client__logo-width-desktop {
+        .#{nth($i,1)} {
+            min-width: nth($i, 2);
+        }
+    }
 }

@@ -22,3 +22,16 @@ a {
 ul {
     list-style: none;
 }
+
+@media screen and (min-width: 1200px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @each $i in $desktop__section-order {
+        .#{nth($i,1)} {
+            order: nth($i, 2);
+        }
+    }
+}
