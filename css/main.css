@@ -1626,7 +1626,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .our-team__social-list-item-link,
-.stay-tuned__social-list-item-link {
+  .stay-tuned__social-list-item-link {
     width: 38px;
     height: 38px;
   }
